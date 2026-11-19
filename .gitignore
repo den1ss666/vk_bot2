@@ -1,10 +1,17 @@
-# Project exclude paths
-/venv/
+# Секреты
+auth_data.py
 
-# Python
+# Окружение Python
+/venv/
+.venv/
 __pycache__/
 *.pyc
 
 # IDE
 .idea/
 .vscode/
+
+# Скачанные видео и посты
+*.mp4
+*.avi
+*.json

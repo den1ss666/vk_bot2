@@ -1,6 +1,6 @@
 import json
 import os
-import youtube_dl
+import yt_dlp
 import requests
 from auth_data import token
 
@@ -66,7 +66,7 @@ def get_wall_posts(group_name):
 
                 try:
                     ydl_opts = {"outtmpl": f"{group_name}/video_files/{post_id}"}
-                    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+                    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                         video_info = ydl.extract_info(url, download=False)
                         video_duration = video_info["duration"]
                         if video_duration > 300:
