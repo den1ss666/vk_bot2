@@ -1,2 +1,10 @@
 # Project exclude paths
 /venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
